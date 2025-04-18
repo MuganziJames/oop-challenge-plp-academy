@@ -18,11 +18,7 @@ class Pet:
         self.happiness = min(10, self.happiness + 2)
         self.hunger = min(10, self.hunger + 1)
 
-    def get_status(self):
-        print(f"{self.name}'s status:")
-        print(f"Hunger: {self.hunger}")
-        print(f"Energy: {self.energy}")
-        print(f"Happiness: {self.happiness}")
+
 
     def train(self, trick):
         self.tricks.append(trick)
@@ -30,3 +26,9 @@ class Pet:
 
     def show_tricks(self):
         print(f"{self.name} knows these tricks: {', '.join(self.tricks)}")
+
+    def get_status(self):
+        print(f"{self.name}'s status:")
+        print(f"Hunger: {self.hunger}")
+        print(f"Energy: {self.energy}")
+        print(f"Happiness: {self.happiness}")
